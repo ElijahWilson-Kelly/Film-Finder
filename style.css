@@ -8,34 +8,57 @@
 }
 
 body {
-  background-color: rgb(9, 5, 31);
+  background-color: rgb(13, 11, 19);
 }
 
 header {
   position: fixed;
-  background-color: black;
+  background-color: #000000ee;
   color: white;
   width: 100%;
   z-index: 2;
 }
 
 h1 {
-  margin: 20px;
-  font-size: 3rem;
+  margin: 10px;
+  font-size: 2rem;
   letter-spacing: 1rem;
   text-align: center;
 }
 
 main {
   position: relative;
-  top: 100px;
-  padding: 20px;
+  top: 300px;
   width: 100%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 40px;
+  justify-items: center;
+}
+
+nav form {
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  font-size: 0.8rem;
+  background-color: rgb(15, 14, 18);
+  color: white;
+}
+
+form button {
+  background-color: rgb(15, 14, 18);
+  color: white;
 }
 
 #movies {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   justify-items: center;
 }
