@@ -64,12 +64,34 @@ const handleOnChangeEvent = function (e) {
   }
 };
 
+const uncheckRadioButtons = function () {
+  const radioBtns = document.querySelectorAll("input[name='film-filter']");
+
+  for (const btn of radioBtns) {
+    if (btn.checked) {
+      btn.checked = false;
+    }
+  }
+};
+
+const handleSearch = function (e) {
+  e.preventDefault();
+  const searchTerm = e.target.querySelector("input").value;
+
+  filterMovies(searchTerm);
+  uncheckRadioButtons();
+  e.target.querySelector("input").value = "";
+};
+
 const addEventListeners = function () {
   const filmFilters = document.querySelectorAll("input[name='film-filter']");
 
   for (const btn of filmFilters) {
     btn.addEventListener("change", handleOnChangeEvent);
   }
+
+  const searchBar = document.getElementById("search-bar");
+  searchBar.addEventListener("submit", handleSearch);
 };
 
 addEventListeners();
