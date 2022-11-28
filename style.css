@@ -62,3 +62,16 @@ form button {
   gap: 20px;
   justify-items: center;
 }
+
+#movies li {
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: left 300ms ease, top 300ms ease, transform 300ms ease;
+}
+
+#movies li:hover {
+  transform: rotate(-4deg);
+  left: -10px;
+  top: -20px;
+}
