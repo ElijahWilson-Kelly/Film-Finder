@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+}
+
+body {
+  background-color: rgb(9, 5, 31);
+}
+
+header {
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  z-index: 2;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+main {
+  position: relative;
+  top: 100px;
+  padding: 20px;
+  width: 100%;
+}
+
+#movies {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}

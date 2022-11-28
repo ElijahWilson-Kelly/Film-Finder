@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Film Finder</title>
+    <script defer type="text/javascript" src="./scripts/movies.js"></script>
+    <script defer type="text/javascript" src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Winc Film Finder</h1>
+      <nav>
+        <input
+          id="latest-filter"
+          name="film-filter"
+          value="newest"
+          type="radio"
+        />
+        <label for="latest-filter">2014 - Present</label>
+
+        <input
+          id="avenger-filter"
+          name="film-filter"
+          value="avenger"
+          type="radio"
+        />
+        <label for="avenger-filter">Avenger</label>
+
+        <input
+          id="x-men-filter"
+          name="film-filter"
+          value="x-men"
+          type="radio"
+        />
+        <label for="x-men-filter">X-Men</label>
+
+        <input
+          id="princess-filter"
+          name="film-filter"
+          value="princess"
+          type="radio"
+        />
+        <label for="princess-filter">Princess</label>
+
+        <input
+          id="batman-filter"
+          name="film-filter"
+          value="batman"
+          type="radio"
+        />
+        <label for="x-men-filter">Batman</label>
+
+        <form id="search-bar">
+          <input type="text" placeholder="Search:" />
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <ul id="movies"></ul>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
