@@ -1,5 +1,15 @@
 const imdbURL = (id) => "https://www.imdb.com/title/" + id;
 
+/* Input = Array of Objects
+Object Example = {
+  title: "",
+  year: "",
+  imdbID: "",
+  type, "",
+  poster, ""
+}
+*/
+
 const addMoviesToDOM = function (movies) {
   const parentUL = document.getElementById("movies");
   while (parentUL.firstChild) {

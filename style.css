@@ -12,23 +12,20 @@ body {
 }
 
 header {
-  position: fixed;
-  background-color: #000000aa;
   color: white;
   width: 100%;
   z-index: 2;
+  margin-bottom: 20px;
 }
 
 h1 {
-  margin: 15px;
-  font-size: 2rem;
+  margin: 20px;
+  font-size: 2.2rem;
   letter-spacing: 1rem;
   text-align: center;
 }
 
 main {
-  position: relative;
-  top: 200px;
   width: 100%;
 }
 
@@ -62,9 +59,9 @@ form button {
 }
 
 #movies {
-  width: 100%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   justify-items: center;
 }
@@ -80,4 +77,33 @@ form button {
   transform: rotate(-4deg);
   left: -10px;
   top: -20px;
+}
+
+@media screen and (min-width: 780px) {
+  main {
+    padding: 0 10%;
+  }
+  #movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  main {
+    padding: 0 4%;
+  }
+
+  #movies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    padding: 0 10px;
+  }
+
+  #movies {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
